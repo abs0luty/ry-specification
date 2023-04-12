@@ -1,0 +1,34 @@
+site_name: Ry programming language specification
+theme:
+  palette:
+    scheme: slate
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+
+nav:
+  - About Ry: index.md
+  - Notation: notation.md
+  - Lexical structure:
+    - Whitespace: lexical-structure/whitespace.md
+    - Comment: lexical-structure/comment.md
+    - Identifier: lexical-structure/identifier.md
+  - Items:
+    - Import: items/import.md
+    - Enum: items/enum.md
+    - Struct: items/struct.md
+    - Function: items/function.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
